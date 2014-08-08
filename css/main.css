@@ -1,0 +1,134 @@
+/* if u change the css, which u will, dont do anything to the `NEEDED` css - that will remain as-it-is */
+
+/* universal */
+	*
+	{
+		cursor: default;
+		font-family: "helvetica";
+		line-height: 2em;
+		margin: 0;
+		/*padding: 0;*/
+	}
+	body,html
+	{
+		height: 100%;
+	}
+	hr
+	{
+		margin-top: 15px;
+	}
+
+
+/* level-1 containers */
+	#leftDiv,
+	#rightDiv
+	{
+		border-radius: 5px;
+		border: 1px solid #bbb;
+		height: 70%;
+		height: 70;
+		overflow: auto;
+		width: 70%;
+	}
+	#rightDiv
+	{
+		float: right;
+		margin: 25px 1.25% 0 0;
+		width: 25%;
+	}
+	#leftDiv
+	{
+		float: left;
+		margin: 25px 0 0 1.25%;
+		width: 70%;
+	}
+	#topbarDiv h1
+	{
+		background: #222;
+		color: white;
+		font-size: 2.25em;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+
+
+
+
+
+
+
+/* level-2 containers */
+
+	#questionDiv,
+	#answerDiv,
+	#dashboardDiv,
+	#questionlistDiv
+	{
+		padding: 20px;
+	}
+
+	#rightDiv
+	{
+		/*padding-left: 0;*/
+	}
+	#dashboardDiv ul,
+	#questionlistDiv ul
+	{
+		margin-left: -20px;
+		padding: 0;
+		list-style: none;
+	}
+	#dashboardDiv ul li,
+	#questionlistDiv ul li a
+	{
+		color: black;
+		display: block;
+		padding-left: 20px;
+		text-decoration: none;
+	}
+	#dashboardDiv ul li:hover,
+	#questionlistDiv ul li:hover a
+	{
+		background: #eee;
+		border-bottom-right-radius: 15px;
+		border-top-right-radius: 15px;
+		box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+	}
+
+
+
+
+
+
+/* form elements */
+	#answerLabel
+	{
+		background: #ddd;
+		border: 1px solid grey;
+		float: left;
+		height: 34px;
+		text-align: center;
+		width: 80px;
+	}
+	#answerInput
+	{
+		border: 1px solid grey;
+		border-left: none;
+		border-right: none;
+		float: left;
+		font-size: 2em;
+		height: 32px;
+		width: 30%;
+	}
+	#answerInput:focus
+	{
+		/*border: 1px solid #00cdef;*/
+		box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	}
+	#submitButton
+	{
+		width: 100px;
+		height: 36px;
+		line-height: 2em;
+		font-size: 1em;
+	}
