@@ -15,8 +15,10 @@
 	}
 	hr
 	{
-		margin-top: 15px;
+		margin-top: 25px;
 	}
+
+
 
 
 /* level-1 containers */
@@ -109,9 +111,11 @@
 		height: 34px;
 		text-align: center;
 		width: 80px;
+		border-radius:  5px 0 0 5px ;
 	}
 	#answerInput
 	{
+		cursor: text;
 		border: 1px solid grey;
 		border-left: none;
 		border-right: none;
@@ -127,8 +131,22 @@
 	}
 	#submitButton
 	{
+		cursor: pointer;
+		background: #abcdef;
+		border: 1px solid grey;
+		border-radius: 0 7px 7px 0;
 		width: 100px;
 		height: 36px;
 		line-height: 2em;
 		font-size: 1em;
+	}
+	#submitButton:hover
+	{
+		background: #55cdef;
+	}
+	#submitButton:active
+	{
+		background: #abcdef;
+		margin-top: 1px;
+		height: 34px;
 	}
