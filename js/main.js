@@ -11,9 +11,6 @@ $("#doubledipSpan").text(doubledip);
 $("#answerInput").focus(function(event)
 {
 	var shadow="0 0 15px rgba(0,0,0,0.35)";
-	// $("#answerLabel").css('box-shadow',shadow);
-	// $("#answerInput").css('box-shadow',shadow);
-	// $("#submitButton").css('box-shadow',shadow);
 	$("#answerDiv").css('box-shadow',shadow);
 });
 

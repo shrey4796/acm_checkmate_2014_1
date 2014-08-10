@@ -26,10 +26,12 @@
 	#leftDiv,
 	#rightDiv
 	{
+		position: relative;
 		border-radius: 5px;
 		border: 1px solid #bbb;
 		height: 70%;
 		overflow: auto;
+		position: relative;
 	}
 	#leftDiv
 	{
@@ -56,15 +58,33 @@
 	#answerDiv,
 	#dashboardDiv,
 	#questionlistDiv
-	{padding: 20px; }
+	{padding: 20px;}
 
-
+	#dashboardDiv
+	{
+		border-radius: 5px;
+		background: white;
+		position: fixed;
+		width: 20%;
+		z-index: 1;
+	}
+	#questionlistDiv
+	{
+		width: 85%;
+		top: 225px;
+		position: absolute;
+	}
 
 	#questionDiv {padding: 0; }
 	#questionDiv h2
 	{
 		padding-left: 20px;
-		background: #ddd;
+		background: #eee;
+	}
+	#questionDiv
+	{
+		overflow: auto;
+		max-height: 82%;
 	}
 	#questionDiv p
 	{
@@ -76,8 +96,12 @@
 
 	#answerDiv
 	{
+		position: absolute;
+		top: 84%;
+		border-radius: 5px;
 		padding: 0;
 		margin: 20px;
+		margin-bottom: 10px;
 		display: inline-block;
 	}
 
@@ -124,13 +148,14 @@
 	}
 	#answerInput
 	{
-		/*width: 500px;*/
+		line-height: 1.25em;
+		padding-left: 10px;
 		cursor: text;
 		border: 1px solid grey;
 		border-left: none;
 		border-right: none;
 		float: left;
-		font-size: 2em;
+		font-size: 1.25em;
 		height: 32px;
 	}
 	#submitButton
