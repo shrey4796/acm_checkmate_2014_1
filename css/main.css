@@ -41,6 +41,7 @@
 	}
 	#rightDiv
 	{
+		overflow: hidden;
 		float: right;
 		margin: 25px 1.25% 0 0;
 		width: 25%;
@@ -70,9 +71,10 @@
 	}
 	#questionlistDiv
 	{
-		width: 85%;
-		top: 225px;
-		position: absolute;
+		overflow: auto;
+		height: 50%;
+		margin-top: 225px;
+		width: 75%;
 	}
 
 	#questionDiv {padding: 0; }
